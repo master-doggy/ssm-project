@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="propertySourcesPlaceholderConfigurer" class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath*:default.properties</value>
+                <value>classpath*:jdbc.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <import resource="classpath:spring/spring-datasource.xml"/>
+    <import resource="classpath:spring/spring-mvc.xml"/>
+    <import resource="classpath:spring/spring-bean.xml"/>
+    <import resource="classpath:spring/spring-aop.xml"/>
+    <import resource="classpath:spring/spring-tschedule.xml"/>
+    <import resource="classpath:spring/spring-rocketmq-bean.xml"/>
+
+</beans>
