@@ -14,7 +14,7 @@
     <packaging>war</packaging>
 
     <properties>
-        <springframework_version>4.1.6.RELEASE</springframework_version>
+        <springframework_version>6.0.0</springframework_version>
         <tomcat_servlet_api_version>8.0.23</tomcat_servlet_api_version>
         <tomcat_jsp_api_version>8.0.23</tomcat_jsp_api_version>
     </properties>
